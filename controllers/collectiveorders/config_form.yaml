@@ -1,0 +1,10 @@
+name: CollectiveOrders
+form: $/aramloosman/foodcoop/models/collectiveorder/fields.yaml
+modelClass: AramLoosman\Foodcoop\Models\CollectiveOrder
+defaultRedirect: aramloosman/foodcoop/collectiveorders
+create:
+    redirect: 'aramloosman/foodcoop/collectiveorders/update/:id'
+    redirectClose: aramloosman/foodcoop/collectiveorders
+update:
+    redirect: aramloosman/foodcoop/collectiveorders
+    redirectClose: aramloosman/foodcoop/collectiveorders

@@ -1,0 +1,10 @@
+title: Orders
+modelClass: AramLoosman\Foodcoop\Models\Order
+list: $/aramloosman/foodcoop/models/order/columns.yaml
+recordUrl: 'aramloosman/foodcoop/orders/preview/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: false 
+showCheckboxes: false
+toolbar:
+    search:
+        prompt: 'backend::lang.list.search_prompt'

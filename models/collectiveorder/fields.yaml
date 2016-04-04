@@ -1,0 +1,25 @@
+fields:
+    title:
+        label: 'aramloosman.foodcoop::lang.collective_order.title.label'
+        span: auto
+        type: text
+        commentAbove: 'aramloosman.foodcoop::lang.collective_order.title.comment'
+    vendor:
+        label: 'aramloosman.foodcoop::lang.collective_order.vendor.label'
+        nameFrom: name
+        descriptionFrom: adress
+        span: auto
+        type: relation
+        commentAbove: 'aramloosman.foodcoop::lang.collective_order.vendor.comment'
+    open_from:
+        label: 'aramloosman.foodcoop::lang.collective_order.open_from.label'
+        mode: datetime
+        span: auto
+        type: datepicker
+        commentAbove: 'aramloosman.foodcoop::lang.collective_order.open_from.comment'
+    open_until:
+        label: 'aramloosman.foodcoop::lang.collective_order.open_until.label'
+        mode: datetime
+        span: auto
+        type: datepicker
+        commentAbove: 'aramloosman.foodcoop::lang.collective_order.open_until.comment'

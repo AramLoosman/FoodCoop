@@ -1,0 +1,6 @@
+columns:
+    name:
+        label: 'aramloosman.foodcoop::lang.vendor.name.label'
+        type: text
+        searchable: true
+        sortable: true

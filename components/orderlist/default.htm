@@ -1,0 +1,52 @@
+
+    {% for order in orders %}
+	{{ 'Order'|_ }} <b>#{{ order.id }}</b> {{ 'from'|_ }} {{ order.created_at|date('d.m.Y H:i') }}
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>
+					{{ 'Product'|_ }}
+				</th>
+				<th class="text-right">
+					{{ 'Price per unit'|_ }}
+				</th>
+				<th class="text-center">
+                    {{ 'Amount'|_ }}
+				</th>
+				<th class="text-right">
+					{{ 'Total'|_ }}
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for product in order.products %}
+			<tr>
+				<td>
+					{{ product.name }}
+				</td>
+				<td class="text-right">
+					{{ product.pivot.price }} {{ 'CHF'|_ }}
+				</td>
+				<td class="text-center">
+					{{ product.pivot.amount }}
+				</td>
+				<td class="text-right">
+					<b>{{ product.pivot.total }} {{ 'CHF'|_ }}</b>
+				</td>
+			</tr>
+			{% endfor %}
+			<tr>
+				<td colspan="3">
+					<b>{{ 'Total'|_ }}</b>
+				</td>
+				<td class="text-right">
+					<b>{{ order.total }} {{ 'CHF'|_ }}</b>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	{% else %}
+	<b>
+        {{ 'You have not yet placed any orders.'|_ }}
+    </b>
+	{% endfor %}

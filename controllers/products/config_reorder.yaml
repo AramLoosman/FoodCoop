@@ -1,0 +1,5 @@
+title: Reorder Products
+modelClass: AramLoosman\Foodcoop\Models\Product
+nameFrom: name
+toolbar:
+    buttons: reorder_toolbar

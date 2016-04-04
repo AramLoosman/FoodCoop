@@ -1,0 +1,15 @@
+name: Products
+modelClass: AramLoosman\Foodcoop\Models\Product
+form: $/aramloosman/foodcoop/models/product/fields.yaml
+defaultRedirect: aramloosman/foodcoop/products
+create:
+    title: 'Create a new product'
+    redirect: 'aramloosman/foodcoop/products/update/:id'
+    redirectClose: aramloosman/foodcoop/products
+    flashSave: 'Your product has been saved!'
+update:
+    title: 'Edit a product'
+    redirect: aramloosman/foodcoop/products
+    redirectClose: aramloosman/foodcoop/products
+    flashSave: 'Your product has been saved!'
+    flashDelete: 'Your product has been deleted!'

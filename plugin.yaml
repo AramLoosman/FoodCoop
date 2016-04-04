@@ -1,0 +1,28 @@
+plugin:
+    name: 'aramloosman.foodcoop::lang.plugin.name'
+    description: 'aramloosman.foodcoop::lang.plugin.description'
+    author: 'Aram Loosman'
+    icon: oc-icon-leaf
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: 'aramloosman.foodcoop::lang.plugin.name'
+        url: aramloosman/foodcoop/products
+        icon: icon-leaf
+        sideMenu:
+            foodcoop-products:
+                label: 'aramloosman.foodcoop::lang.plugin.products'
+                url: aramloosman/foodcoop/products
+                icon: icon-lemon-o
+            foodcoop-orders:
+                label: 'aramloosman.foodcoop::lang.plugin.orders'
+                url: aramloosman/foodcoop/orders
+                icon: icon-list
+            foodcoop-vendors:
+                label: 'aramloosman.foodcoop::lang.plugin.vendors'
+                url: aramloosman/foodcoop/vendors
+                icon: icon-truck
+            foodcoop-collectiveorders:
+                label: 'aramloosman.foodcoop::lang.plugin.collectiveorders'
+                url: aramloosman/foodcoop/collectiveorders
+                icon: icon-cart-plus

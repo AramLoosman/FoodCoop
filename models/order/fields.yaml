@@ -1,0 +1,14 @@
+fields:
+    status:
+        label: 'aramloosman.foodcoop::lang.order.status.label'
+        options:
+            new: New
+            ordered: Ordered
+            closed: Closed
+        span: auto
+        type: dropdown
+    total:
+        label: 'aramloosman.foodcoop::lang.order.total.label'
+        span: auto
+        disabled: 1
+        type: number

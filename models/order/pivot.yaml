@@ -1,0 +1,19 @@
+columns:
+    name:
+        label: 'aramloosman.foodcoop::lang.product.name.label'
+        type: text
+        searchable: true
+        sortable: true
+    pivot[amount]:
+        label: 'aramloosman.foodcoop::lang.product.unit.label'
+        type: number
+        searchable: true
+        sortable: true
+    pivot[price]:
+        label: 'aramloosman.foodcoop::lang.product.price.label'
+        type: number
+        sortable: true
+    pivot[total]:
+        label: 'aramloosman.foodcoop::lang.product.total.label'
+        type: number
+        sortable: true

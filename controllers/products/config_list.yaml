@@ -1,0 +1,11 @@
+title: Products
+modelClass: AramLoosman\Foodcoop\Models\Product
+list: $/aramloosman/foodcoop/models/product/columns.yaml
+recordUrl: 'aramloosman/foodcoop/products/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

@@ -1,0 +1,36 @@
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>
+				{{ 'Hersteller'|_ }}
+			</th>
+			<th>
+				{{ 'Bestellung'|_ }}
+			</th>
+			<th>
+				{{ 'Dauer'|_ }}
+			</th>
+            <th></th>
+		</tr>
+	</thead>
+	<tbody>
+        {% for collective_order in collective_orders %}
+		<tr>
+			<td>
+				{{ collective_order.vendor.name }}
+			</td>
+			<td>
+				{{ collective_order.title }}
+			</td>
+			<td>
+				{{ collective_order.open_until }}
+			</td>
+            <td class="text-right">
+                <a href="{{ orderPage|page({'id':collective_order.id}) }}" class="btn btn-primary">
+					{{ 'Produkte auswählen'|_ }}
+				</a>
+            </td>
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>

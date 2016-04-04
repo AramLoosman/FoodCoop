@@ -1,0 +1,11 @@
+name: Vendors
+modelClass: AramLoosman\Foodcoop\Models\Vendor
+form: $/aramloosman/foodcoop/models/vendor/fields.yaml
+defaultRedirect: aramloosman/foodcoop/vendors
+create:
+    redirect: 'aramloosman/foodcoop/vendors/update/:id'
+    redirectClose: aramloosman/foodcoop/vendors
+update:
+    redirect: aramloosman/foodcoop/vendors
+    redirectClose: aramloosman/foodcoop/vendors
+preview: {  }

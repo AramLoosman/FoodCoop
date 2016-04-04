@@ -1,0 +1,28 @@
+columns:
+    created_at:
+        label: 'aramloosman.foodcoop::lang.order.date.label'
+        type: datetime
+        sortable: true
+        format: 'd.m.Y H:i'
+    user_id:
+        label: 'aramloosman.foodcoop::lang.order.user.label'
+        type: text
+        searchable: true
+        sortable: true
+        select: name
+        relation: user
+    total:
+        label: 'aramloosman.foodcoop::lang.order.total.label'
+        type: number
+        searchable: true
+        sortable: true
+    status:
+        label: 'aramloosman.foodcoop::lang.order.status.label'
+        type: text
+        searchable: true
+        sortable: true
+    products:
+        label: 'aramloosman.foodcoop::lang.order.product_count.label'
+        relation: product_count
+        valueFrom: count
+        default: 0

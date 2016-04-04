@@ -1,0 +1,60 @@
+
+<form method="post" data-request="onOrder" data-request-redirect="{{ 'order-confirm'|page }}" data-request-error="alert('{{ 'An error occured while processing your order.'|_ }}');">
+<table class="table table-striped">
+    <thead>
+        <th width="40%">
+            {{ 'Product'|_ }}
+        </th>
+        <th width="15%">
+            {{ 'Unit'|_ }}
+        </th>
+        <th width="15%">
+            {{ 'Price per unit'|_}}
+        </th>
+        <th width="15%">
+            {{ 'Amount'|_ }}
+        </th>
+        <th width="15%">
+            {{ 'Total'|_ }}
+        </th>
+    </thead>
+    <tbody>
+        {% for record in products %}
+        <tr>
+            <td>
+                {{ record.name }}
+            </td>
+            <td>
+                {{ record.unit }}
+            </td>
+            <td>
+                <span class="product-{{ record.id }}-price">{{ record.price }}</span> {{ 'CHF'|_ }}
+            </td>
+            <td>
+                <input type="hidden" name="orderproduct[{{ loop.index0 }}][id]" value="{{ record.id }}" />
+                <input type="number" name="orderproduct[{{ loop.index0 }}][amount]" data-calculate-price="product-{{ record.id }}-price" data-calculate-target="product-{{ record.id }}-total" class="form-control" />
+            </td>
+            <td>
+                <span class="product-{{ record.id }}-total line-total">0.00</span> {{ 'CHF'|_ }}
+            </td>
+        </tr>
+        {% else %}
+        <tr>
+            <td colspan="5">
+		        {{ 'Currently no products'|_ }}
+    	    </td>
+        </tr>
+        {% endfor %}
+        <tr>
+            <th colspan="4">
+                {{ 'Total'|_ }}
+            </th>
+            <th>
+                <span class="order-total">0.00</span> {{ 'CHF'|_ }}
+            </th>
+        </tr>
+    </tbody>
+</table>
+
+<input type="submit" class="btn btn-primary pull-right" value="{{ 'Order now'|_ }}" />
+</form>

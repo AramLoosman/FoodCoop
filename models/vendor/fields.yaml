@@ -1,0 +1,12 @@
+fields:
+    name:
+        label: 'aramloosman.foodcoop::lang.vendor.name.label'
+        span: auto
+        type: text
+        commentAbove: 'aramloosman.foodcoop::lang.vendor.name.comment'
+    adress:
+        label: 'aramloosman.foodcoop::lang.vendor.adress.label'
+        size: tiny
+        span: auto
+        type: textarea
+        commentAbove: 'aramloosman.foodcoop::lang.vendor.adress.comment'

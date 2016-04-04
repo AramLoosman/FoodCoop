@@ -1,0 +1,14 @@
+title: Vendors
+modelClass: AramLoosman\Foodcoop\Models\Vendor
+list: $/aramloosman/foodcoop/models/vendor/columns.yaml
+recordUrl: 'aramloosman/foodcoop/vendors/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+defaultSort:
+    column: name
+    direction: asc
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

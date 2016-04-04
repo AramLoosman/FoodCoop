@@ -1,0 +1,41 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table aramloosman_foodcoop_products'
+    - builder_table_create_aramloosman_foodcoop_products.php
+1.0.3:
+    - 'Created table aramloosman_foodcoop_orders'
+    - builder_table_create_aramloosman_foodcoop_orders.php
+1.0.4:
+    - 'Created table aramloosman_foodcoop_order_products'
+    - builder_table_create_aramloosman_foodcoop_order_products.php
+1.0.5:
+    - 'Updated table aramloosman_foodcoop_products'
+    - builder_table_update_aramloosman_foodcoop_products.php
+1.0.6:
+    - 'Updated table aramloosman_foodcoop_order_products'
+    - builder_table_update_aramloosman_foodcoop_order_product.php
+1.0.7:
+    - 'Updated table aramloosman_foodcoop_orders'
+    - builder_table_update_aramloosman_foodcoop_orders.php
+1.0.8:
+    - 'Updated table aramloosman_foodcoop_products'
+    - builder_table_update_aramloosman_foodcoop_products_2.php
+1.0.9:
+    - 'Updated table aramloosman_foodcoop_products'
+    - builder_table_update_aramloosman_foodcoop_products_3.php
+1.0.10:
+    - 'Created table aramloosman_foodcoop_vendors'
+    - builder_table_create_aramloosman_foodcoop_vendors.php
+1.0.11:
+    - 'Updated table aramloosman_foodcoop_vendors'
+    - builder_table_update_aramloosman_foodcoop_vendors.php
+1.0.12:
+    - 'Created table aramloosman_foodcoop_collective_order'
+    - builder_table_create_aramloosman_foodcoop_collective_order.php
+1.0.13:
+    - 'Updated table aramloosman_foodcoop_orders'
+    - builder_table_update_aramloosman_foodcoop_orders_2.php
+1.0.14:
+    - 'Updated table aramloosman_foodcoop_products'
+    - builder_table_update_aramloosman_foodcoop_products_4.php

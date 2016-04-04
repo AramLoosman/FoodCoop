@@ -1,0 +1,22 @@
+columns:
+    name:
+        label: 'aramloosman.foodcoop::lang.product.name.label'
+        type: text
+        searchable: true
+        sortable: true
+    unit:
+        label: 'aramloosman.foodcoop::lang.product.unit.label'
+        type: text
+        searchable: true
+        sortable: true
+    price:
+        label: 'aramloosman.foodcoop::lang.product.price.label'
+        type: number
+        sortable: true
+    vendor:
+        label: 'aramloosman.foodcoop::lang.product.vendor.label'
+        type: text
+        searchable: true
+        sortable: true
+        select: name
+        relation: vendor

@@ -1,0 +1,6 @@
+products:
+    label: Product
+    view:
+        list: $/aramloosman/foodcoop/models/order/pivot.yaml
+    pivot:
+        form: $/aramloosman/foodcoop/models/order/pivot.yaml

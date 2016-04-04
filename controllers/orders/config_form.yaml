@@ -1,0 +1,11 @@
+name: Orders
+modelClass: AramLoosman\Foodcoop\Models\Order
+form: $/aramloosman/foodcoop/models/order/fields.yaml
+defaultRedirect: aramloosman/foodcoop/orders
+create:
+    redirect: 'aramloosman/foodcoop/orders/update/:id'
+    redirectClose: aramloosman/foodcoop/orders
+update:
+    redirect: aramloosman/foodcoop/orders
+    redirectClose: aramloosman/foodcoop/orders
+preview: {  }

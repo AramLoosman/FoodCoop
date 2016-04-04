@@ -1,0 +1,30 @@
+fields:
+    name:
+        label: 'aramloosman.foodcoop::lang.product.name.label'
+        span: auto
+        required: 1
+        type: text
+        commentAbove: 'aramloosman.foodcoop::lang.product.name.comment'
+    vendor:
+        label: 'aramloosman.foodcoop::lang.product.vendor.label'
+        nameFrom: name
+        span: auto
+        type: relation
+        commentAbove: 'aramloosman.foodcoop::lang.product.vendor.comment'
+    unit:
+        label: 'aramloosman.foodcoop::lang.product.unit.label'
+        span: auto
+        type: text
+        commentAbove: 'aramloosman.foodcoop::lang.product.unit.comment'
+    price:
+        label: 'aramloosman.foodcoop::lang.product.price.label'
+        span: auto
+        required: 1
+        type: number
+        commentAbove: 'aramloosman.foodcoop::lang.product.price.comment'
+    description:
+        label: 'aramloosman.foodcoop::lang.product.description.label'
+        size: large
+        span: full
+        type: textarea
+        commentAbove: 'aramloosman.foodcoop::lang.product.description.comment'

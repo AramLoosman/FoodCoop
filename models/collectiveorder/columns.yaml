@@ -1,0 +1,20 @@
+columns:
+    name:
+        label: 'aramloosman.foodcoop::lang.collective_order.vendor.label'
+        type: text
+        searchable: true
+        sortable: true
+        select: name
+        relation: vendor
+    title:
+        label: 'aramloosman.foodcoop::lang.collective_order.title.label'
+        type: text
+        searchable: true
+        sortable: true
+    orders:
+        label: 'aramloosman.foodcoop::lang.collective_order.orders.label'
+        type: number
+        default: '0'
+        sortable: false
+        relation: order_count
+        valueFrom: 'count'
