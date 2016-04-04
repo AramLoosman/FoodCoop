@@ -1,2 +1,4 @@
 # FoodCoop
-OctoberCMS FoodCoop Software Plugin
+An OctoberCMS Plugin for managing a local FoodCoop
+
+
